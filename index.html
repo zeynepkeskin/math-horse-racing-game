@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="game.css">
+        <title>Math Horse Race Game</title>
+    </head>
+    <body>
+        <div id="intro">
+            <h1>Math Horse Race Game</h1>
+            <h3>Player 1 Name</h3>
+            <div class="player">
+                <img src="assets/static1.png">
+                <input id="player1Name">
+            </div>
+            <h3>Player 2 Name</h3>
+            <div class="player" id="p2">
+                <img src="assets/static2.png">
+                <input id="player2Name">
+            </div><br>
+            <h3>Math Type</h3>
+            <div class="gt">
+                <input type="radio" name="gt" checked onclick="setGameType('x')"> <span>x</span>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <input type="radio" name="gt" onclick="setGameType('+')"> <span>+</span>
+            </div>
+            <button onclick="startGame()">START GAME</button>
+
+        </div>
+
+        <div id="game">
+            <div id="player1Track">
+                <span id="player1" class="playerName"></span>
+                <div class="track t1">
+                    <img id="horse1" class="horse" src="assets/horseOption1.gif">
+                    <div id="line"></div>
+                </div>
+            </div>
+            <div class="question">
+                <span id="number1"></span>
+                <span id="mathType">x</span>
+                <span id="number2"></span>
+                <span>=</span>
+                <span><input id="res" onkeyup="checkResult()"></span>
+            </div>
+            <div id="player2Track">
+                <span id="player2" class="playerName"></span>
+                <div class="track t2">
+                    <img id="horse2" class="horse" src="assets/horseOption2.gif">
+                </div>
+            </div>
+        </div>
+
+        <div id="end">
+            <br><br><br>
+            <img style="width:300px"  src="assets/win.gif"><br>
+            <h1 id="winnerName">The Winner is Bulent</h1>
+            <button onclick="playAgain()">Play Again!</button>
+        </div>
+
+        <audio autoplay>
+            <source src="assets/bg.mp3">
+        </audio>
+        <audio id="correct">
+            <source src="assets/correct.wav">
+        </audio>
+        <script src="game.js"></script>
+    </body ng-controller="MainController">
+</html>

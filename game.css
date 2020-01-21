@@ -1,0 +1,137 @@
+body {
+    background-color: black;
+    color:lightseagreen
+}
+#intro {
+    text-align: center;
+}
+h1 {
+    font-size: 60px;
+    color: lightseagreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3 {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+.player {
+    border: 10px solid lightseagreen;
+    border-radius: 200px;
+    width: 390px;
+    display: inline-block;
+    overflow: hidden;
+    background-color: white;
+}
+#p2{
+    background-color: #f9da2b;
+}
+#p2 input{
+    background-color: #f9da2b;
+}
+.player input {
+    font-size: 60px;
+    vertical-align: text-bottom;
+    border: none;
+    width: 300px;
+    color: rgb(48, 94, 124);
+}
+input[type=radio]{
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+}
+.gt span{
+    font-size: 55px;
+    vertical-align: middle;
+    font-family: monospace;
+}
+input:focus{
+    outline: none;
+}
+.player img {
+    width: 80px;
+    height: 80px;
+    vertical-align: text-bottom; 
+}
+#intro button {
+    margin-top: 40px;
+    font-size: 50px;
+    font-family: monospace;
+    background: lightseagreen;
+    color: black;
+    padding:20px 40px;
+    cursor: pointer;
+}
+
+#game, #end {
+    display:none
+}
+#horse1, #horse2 {
+    width:200px;
+    height: 200px;
+}
+
+.track {
+    border: 5px solid white;
+    margin-bottom: 20px;
+    position: relative;
+    height: 200px;
+    background-color: white;
+}
+.t2 {
+    background-color: #f9da2b;
+}
+.active .track {
+    border: 5px solid red;
+}
+.horse {
+    position:absolute;
+}
+
+#line {
+    position: absolute;
+    height: 577px;
+    border-right: gray 1px dashed ;
+    z-index: 100;
+}
+
+.question {
+    text-align: center;
+    color:white;
+}
+
+.question span, .question input {
+    font-size: 90px;
+    font-family: monospace;
+}
+
+.question input {
+    width: 119px;
+}
+span.playerName {
+    background: white;
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.active span.playerName {
+    background: red;
+}
+
+#end {
+    border:25px double lightseagreen;
+    position:absolute;
+    left:150px;right:150px;top:150px;bottom:150px;
+    background:aquamarine;
+    text-align: center;
+}
+#end button {
+    font-size: 30px;
+    font-family: monospace;
+    background: palevioletred;
+    color: white;
+    border: 5px seagreen dotted;
+    padding:10px 30px;
+    cursor: pointer;
+}
